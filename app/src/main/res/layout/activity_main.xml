@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.hsf.multitest.MyLinearLayout
+            android:id="@+id/ll_outer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:background="@android:color/holo_green_light">
+
+            <com.hsf.multitest.MyButton
+                android:id="@+id/btn_clikc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我可以点击"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello大家好"
+                android:clickable="true"/>
+
+            <Button
+                android:id="@+id/btn_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通的按钮"/>
+
+            <TextView
+                android:id="@+id/tv_only_onTouchListener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只监听onTouchListener"/>
+
+        </com.hsf.multitest.MyLinearLayout>
+
+        <com.hsf.multitest.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_light">
+            <com.hsf.multitest.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/holo_blue_light">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/holo_purple"/>
+
+                <com.hsf.multitest.MyButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我可以点击"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@android:color/holo_red_light"/>
+
+
+            </com.hsf.multitest.MyLinearLayout>
+        </com.hsf.multitest.MyScrollView>
+
+    </LinearLayout>
+
+
+</layout>
