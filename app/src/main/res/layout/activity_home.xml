@@ -26,5 +26,12 @@
         android:text="去ScrollTouchActivity"
         android:onClick="goScrollTouchActivity"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去goScrollTouchRetureFalseActivity"
+        android:onClick="goScrollTouchRetureFalseActivity"/>
+
+
 
 </LinearLayout>

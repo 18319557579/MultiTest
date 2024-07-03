@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.hsf.multitest.scroll_touch.ScrollTouchActivity
+import com.hsf.multitest.scroll_touch_return_false.ScrollTouchRetureFalseActivity
 import com.hsf.multitest.touch.TouchActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -24,5 +25,9 @@ class HomeActivity : AppCompatActivity() {
     }
     fun goScrollTouchActivity(view: View) {
         startActivity(Intent(this, ScrollTouchActivity::class.java))
+    }
+
+    fun goScrollTouchRetureFalseActivity(view: View) {
+        startActivity(Intent(this, ScrollTouchRetureFalseActivity::class.java))
     }
 }
