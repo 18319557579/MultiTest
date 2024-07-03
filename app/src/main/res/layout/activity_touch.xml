@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".touch.TouchActivity"
+    android:orientation="vertical">
+
+    <com.hsf.multitest.touch.TouchView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+    <com.hsf.multitest.touch.TouchView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_green_dark"
+        android:clickable="true"/>
+
+
+    <com.hsf.multitest.touch.TouchButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <com.hsf.multitest.touch.TouchButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="false"/>
+
+
+
+</LinearLayout>
